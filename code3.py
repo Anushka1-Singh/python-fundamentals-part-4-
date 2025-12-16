@@ -24,8 +24,10 @@ print(ta1.name, ta1.gpa, ta1.salary)
 
 
 # MULTI LEVEL INHERITANCE
-#so basically super in child class invokes the constructor of parent class and that will inherit the methods and attributes of parent classs truly
-#Without super(), the parent's __init__ is skipped, so the parent's attributes don't get initialized properly. With super(), everything works perfectly! ✅
+#so basically super in child class invokes the constructor of parent class and that will 
+# inherit the methods and attributes of parent classs truly
+#Without super(), the parent's __init__ is skipped, so the parent's attributes don't get
+#  initialized properly. With super(), everything works perfectly! ✅
 #class Employee:
 #    start_time = "10am"
 #    end_time = "5pm"
