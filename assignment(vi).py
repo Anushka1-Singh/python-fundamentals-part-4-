@@ -15,12 +15,15 @@ class Omnivore:
         print("grass and flesh",self.both)
 class Bear(Herbivore, Carnivore, Omnivore):
     def __init__(self, grass, flesh, both, wild):
-        super().__init__(flesh)
-        super().__init__(grass)
-        super().__init__(both)
+        Herbivore.__init__(self,grass)
+        Carnivore.__init__(self,flesh)
+        Omnivore.__init__(self,both)
         self.wild=wild
 b1=Bear("grass","flesh","both","wild animal")
-print(b1)
+print(b1.grass,b1.flesh,b1.both,b1.wild)
+b1.info()
+b1.action() 
+b1.work()
 
 
 
